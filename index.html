@@ -5,6 +5,35 @@
     <div>
         <label>pseudo</label>
         <input pattern="abc.*">
-        <span>pseudo disponible</span>
     </div>
+    <input id="menu" type="checkbox">
+    <label for="menu">Connaissez-vous les sélecteurs css ?</label>
+    <fieldset>
+        <legend>Sélecteurs css</legend>
+        <ul>
+            <li><label><input type="checkbox">Sélecteur global</label></li>
+            <li><label><input type="checkbox">Sélecteur d'élément</label></li>
+            <li><label><input type="checkbox">Sélecteur de classe</label></li>
+            <li><label><input type="checkbox">Sélecteur d'attribut'</label></li>
+            <li><label><input type="checkbox">Sélecteur d'id'</label></li>
+            <li>
+                <div>Combinaisons de sélecteur</div>
+                <ul>
+                    <li><label><input type="checkbox">Descendants</label></li>
+                    <li><label><input type="checkbox">Enfant direct</label></li>
+                    <li><label><input type="checkbox">Voisins suivants</label></li>
+                    <li><label><input type="checkbox">Voisin suivant direct</label></li>
+                    <li><label><input type="checkbox">:has</label></li>
+                    <li><label><input type="checkbox">:is</label></li>
+                    <li><label><input type="checkbox">:where</label></li>
+                </ul>
+            </li>
+            <li>
+                <div>Pseudo-classes</div>
+                <ul>
+                    <li><label><input type="checkbox">:checked</label></li>
+                </ul>
+            </li>
+        </ul>
+    </fieldset>
 </form>

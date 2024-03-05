@@ -1,21 +1,38 @@
-﻿label:has(+:invalid){
+﻿label:has(+:invalid) {
     outline: red 1px solid;
 }
 
-#mail{
+#mail {
     background-color: salmon;
 }
 
-:user-invalid{
+:user-invalid {
     outline: 2px solid black;
 }
 
-@layer base{
-    input{
+@layer base {
+    input {
         outline: none;
     }
 
-    :user-invalid{
+    :user-invalid {
         outline: 2px solid blue;
     }
+}
+
+fieldset {
+    margin-top: 1em;
+    display: none;
+}
+
+input:checked ~ fieldset {
+    display: block;
+}
+
+[aria-label] {
+    background-color: blue;
+}
+
+label {
+    user-select: none;
 }
