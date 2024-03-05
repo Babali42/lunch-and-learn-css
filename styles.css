@@ -1,0 +1,21 @@
+﻿label:has(+:invalid){
+    outline: red 1px solid;
+}
+
+#mail{
+    background-color: salmon;
+}
+
+:user-invalid{
+    outline: 2px solid black;
+}
+
+@layer base{
+    input{
+        outline: none;
+    }
+
+    :user-invalid{
+        outline: 2px solid blue;
+    }
+}
