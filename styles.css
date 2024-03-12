@@ -1,38 +1,49 @@
-﻿label:has(+:invalid) {
-    outline: red 1px solid;
-}
-
-#mail {
-    background-color: salmon;
-}
-
-:user-invalid {
-    outline: 2px solid black;
-}
-
-@layer base {
-    input {
-        outline: none;
+﻿@layer base {
+    fieldset {
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
-
-    :user-invalid {
-        outline: 2px solid blue;
-    }
-}
-
-fieldset {
-    margin-top: 1em;
-    display: none;
-}
-
-input:checked ~ fieldset {
-    display: block;
-}
-
-[aria-label] {
-    background-color: blue;
 }
 
 label {
     user-select: none;
+}
+
+li div {
+    font-size: 1.1em;
+    user-select: none;
+}
+
+fieldset > ul > li {
+    font-style: normal;
+}
+
+li {
+    font-style: italic;
+}
+
+input:focus {
+    background-color: lightskyblue;
+}
+
+input:checked + label {
+    font-weight: bold;
+}
+
+input:not(:checked) {
+    & ~ fieldset {
+        display: none;
+    }
+}
+
+#mail:invalid {
+    border: solid 1px red;
+}
+
+label:has(+#mail:user-invalid) {
+    color: red;
+}
+
+fieldset:has(input:not(:checked)[type=checkbox]) {
+    border-color: red;
 }
