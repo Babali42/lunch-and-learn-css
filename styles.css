@@ -1,59 +1,53 @@
-﻿
-label {
+﻿label {
     user-select: none;
-}
-
-li div {
-    font-size: 1.1em;
-    user-select: none;
-}
-
-fieldset > ul > li {
-    font-style: normal;
 }
 
 li {
-    font-style: italic;
+    user-select: none;
 }
 
-input:focus {
-    background-color: lightskyblue;
+li li {
+    font-style: italic;
 }
 
 input:checked + label {
     font-weight: bold;
 }
 
-input:not(:checked) {
-    & ~ fieldset {
-        display: none;
-    }
+#mail {
+    background: lightyellow !important;
+    outline: none;
 }
 
-#mail:invalid {
+:where(#mail):invalid{
     border: solid 1px red;
 }
 
-label:has(+#mail:user-invalid) {
-    color: red;
+label:has(+#mail:invalid,+:invalid) {
+    color : red
+}
+
+#mail:focus:valid{
+    outline: revert;
+}
+
+input:not(:checked) ~ fieldset {
+    display: none;
+}
+
+fieldset:not(:has(input:not(:checked))){
+    border-color: greenyellow;
+}
+
+[data-toto^=tat]{
+    outline: solid 1px red;
 }
 
 
-input:where(fieldset input) {
-    background-color: lightyellow;
-}
 
-input:invalid {
-    background-color: red;
-}
 
-fieldset:has([type=checkbox]:not(:checked)) {
-    border: solid red;
-}
 
-legend {
-    font-family: Arial;
-}
+
 
 @layer base {
     fieldset {
@@ -67,5 +61,6 @@ legend {
 
     #mail {
         background-color: skyblue !important;
+        border: solid 1px black;
     }
 }
