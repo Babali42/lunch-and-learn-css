@@ -1,4 +1,4 @@
-﻿# Point besoin de classe pour bien sélectionner
+﻿# Talk : Point besoin de classe pour bien sélectionner
 
 John et Baptiste - 25/03/2024
 
@@ -34,4 +34,16 @@ certains cas (petits composants avec des styles isolés) il peut être intéress
 
 ## Titre alternatif
 
-Point besoin de classe(s) pour le css
+Point besoin de classe(s) pour le css!
+
+# Slides
+![Slide1.jpg](images%2FSlide1.jpg)
+![Slide2.jpg](images%2FSlide2.jpg)
+![Slide3.jpg](images%2FSlide3.jpg)
+![Slide4.jpg](images%2FSlide4.jpg)
+![Slide5.jpg](images%2FSlide5.jpg)
+![Slide6.jpg](images%2FSlide6.jpg)
+![Slide7.jpg](images%2FSlide7.jpg)
+![Slide8.jpg](images%2FSlide8.jpg)
+![Slide9.jpg](images%2FSlide9.jpg)
+![Slide10.jpg](images%2FSlide10.jpg)
